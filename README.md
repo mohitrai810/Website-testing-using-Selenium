@@ -25,21 +25,11 @@ This repository contains Selenium scripts to automate the testing of the Sort Cr
 This project is licensed under the MIT License.
 
 ## Some demo usage of selenium 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-
-# Path to your WebDriver
-driver = webdriver.Chrome('/path/to/chromedriver')
-
-# Open the Sort Craft website
-driver.get('http://localhost:3000')
-
-# Example: Interact with the Home link
-home_link = driver.find_element(By.LINK_TEXT, 'Home')
-home_link.click()
-
-# Add more interactions here
-
-# Close the browser
-driver.quit()
+1. from selenium import webdriver
+2. from selenium.webdriver.common.by import By
+3. driver = webdriver.Chrome('/path/to/chromedriver')
+4. driver.get('http://localhost:3000')
+5. home_link = driver.find_element(By.LINK_TEXT, 'Home')
+6. home_link.click()
+7. driver.quit()
 
